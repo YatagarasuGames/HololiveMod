@@ -1,0 +1,145 @@
+Items: {
+	BaseWeapon: {
+		Tooltip: ""
+		DisplayName: Base Weapon
+	}
+
+	Trident: {
+		Tooltip: A trident from the depths of the ocean where there was once an advanced civilization
+		DisplayName: Trident
+	}
+
+	MoriScythe: {
+		Tooltip: Guh!
+		DisplayName: The rapper's scythe
+	}
+
+	MoriSunglasses: {
+		Tooltip: Very cool!
+		DisplayName: Rapper's sunglasses
+	}
+
+	KiaraSword: {
+		Tooltip: Very HOT sword
+		DisplayName: Phoenix's sword
+	}
+
+	AmeBullet: {
+		DisplayName: Time bullet
+		Tooltip: A unique bullet from a girl called herself a "time traveller detective". Slow down enemies on hit
+	}
+
+	AmePistol: {
+		DisplayName: Detective's Pistol
+		Tooltip: The same gun that was knocked out of the detective's hand. Looks classy
+	}
+
+	CustomCrafting: {
+		DisplayName: Custom Crafting
+		Tooltip: ""
+	}
+
+	HoloOffice: {
+		DisplayName: Hololive Office
+		Tooltip: Allow you to craft items from hololive bars.\nAnyway they don't have a building that big
+	}
+
+	HoloOfficeWorkbench: {
+		DisplayName: Holo Office Workbench
+		Tooltip:
+			'''
+			Allow you to craft items from hololive bars. 
+			Anyway they don't have a building that big
+			'''
+	}
+
+	HoloOre: {
+		DisplayName: Hololive Ore
+		Tooltip: Talents are made of it.
+	}
+
+	HoloBar: {
+		DisplayName: Hololive Bar
+		Tooltip: Shiny Smily! (Story)
+	}
+
+	HoloFanBook: {
+		DisplayName: Hololive Fan Book
+		Tooltip: Gura's math book
+	}
+
+	HoloFanBow: {
+		DisplayName: Hololive Fan Bow
+		Tooltip: Fight for your oshis!
+	}
+
+	HoloFanSword: {
+		DisplayName: Hololive Fan Sword
+		Tooltip: Fight for your oshis!
+	}
+
+	DetectiveScope: {
+		DisplayName: Detective Scope
+		Tooltip: A scope of detective. Without aimbot by the way.
+	}
+
+	PhoenixShield: {
+		DisplayName: Phoenix Shield
+		Tooltip: She's not a chicken!
+	}
+
+	MoriTrophy: {
+		DisplayName: Mori Trophy
+		Tooltip: ""
+	}
+
+	TimeShard: {
+		DisplayName: Time Shard
+		Tooltip: ""
+	}
+
+	RapperMicrophone: {
+		DisplayName: Rapper Microphone
+		Tooltip: ""
+	}
+
+	YingYangSphere: {
+		DisplayName: Ying Yang Sphere
+		Tooltip: ""
+	}
+}
+
+Projectiles: {
+	TridentProjectile.DisplayName: Trident Projectile
+	AmeBulletProjectile.DisplayName: Ame Bullet Projectile
+	HoloBookProjectile.DisplayName: Holo Book Projectile
+	TridentFlyingProjectile.DisplayName: Trident Flying Projectile
+	AmeliaBeam.DisplayName: Amelia Beam
+	EvenlySpreadPrimeLaserRay.DisplayName: Evenly Spread Prime Laser Ray
+	AmeliaClockArrow.DisplayName: Amelia Clock Arrow
+	AmeliaSyringe.DisplayName: Amelia Syringe
+}
+
+Tiles: {
+	CustomCrafting.MapEntry: Custom Crafting
+	HoloOffice.MapEntry: Holo Office
+	HoloOfficeTile.MapEntry: Holo Office Tile
+	HoloOreTile.MapEntry: Holo Ore Tile
+	HoloBarTile.MapEntry: Holo Bar Tile
+	MoriTrophyTile.MapEntry: Mori Trophy Tile
+}
+
+NPCs: {
+	Shrimp.DisplayName: Shrimp
+	AmeliaWatson.DisplayName: Amelia Watson
+	Buba.DisplayName: Buba
+}
+
+Keybinds.ActivateRapperMicrophoneBuff.DisplayName: Activate Rapper Microphone Buff
+
+Buffs: {
+	MeraMeraMicrophoneBuff: {
+		DisplayName: Mera Mera Microphone Buff
+		Description: Mods.HololiveMod.Buffs.MeraMeraMicrophoneBuff.Description
+	}
+}

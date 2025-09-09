@@ -1,0 +1,3 @@
+displayName = Hololive Mod
+author = Yatagarasu
+version = 0.1
