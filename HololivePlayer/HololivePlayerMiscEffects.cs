@@ -10,15 +10,19 @@ namespace HololiveMod.HololivePlayer
 {
     public partial class HololivePlayer : ModPlayer
     {
-        private bool _wereBuffsApplied = false;
+        
 
+        
         public override void PostUpdateMiscEffects()
         {
             MiscEffects();
         }
 
+        
+
         private void MiscEffects()
         {
+            Main.NewText(Player.moveSpeed);
             if (rapperMicrophoneCooldown > 0 && rapperMicrophoneBuffTime <= 0)
             {
                 rapperMicrophoneCooldown--;
@@ -35,50 +39,37 @@ namespace HololiveMod.HololivePlayer
                 rapperMicrophoneBuffTime--;
             }
 
-            if (sunglasses)
+            if (sunglasses && Main.dayTime)
             {
-                if (Main.dayTime)
-                {
-                    if (_wereBuffsApplied == true) return;
-                    Player.GetAttackSpeed(DamageClass.Generic) += 0.05f;
-                    Player.GetDamage(DamageClass.Generic) += 0.05f;
-                    Player.GetArmorPenetration(DamageClass.Generic) += 0.03f;
-                    Player.GetCritChance(DamageClass.Generic) += 0.05f;
-                    Player.lifeRegen += 5;
-                    Player.manaRegen += 7;
-                    Player.moveSpeed *= 1.05f;
-                    Player.maxRunSpeed *= 1.05f;
-                    _wereBuffsApplied = true;
-                }
-                else
-                {
-                    if (_wereBuffsApplied == false) return;
-                    Player.GetAttackSpeed(DamageClass.Generic) -= 0.05f;
-                    Player.GetDamage(DamageClass.Generic) -= 0.05f;
-                    Player.GetArmorPenetration(DamageClass.Generic) -= 0.03f;
-                    Player.GetCritChance(DamageClass.Generic) -= 0.05f;
-                    Player.lifeRegen -= 5;
-                    Player.manaRegen -= 7;
-                    Player.moveSpeed /= 1.05f;
-                    Player.maxRunSpeed /= 1.05f;
-                    _wereBuffsApplied = false;
-                }
+                ApplySunglassesBuffs();
             }
-            else
-            {
-                if (_wereBuffsApplied == false) return;
-                Player.GetAttackSpeed(DamageClass.Generic) -= 0.05f;
-                Player.GetDamage(DamageClass.Generic) -= 0.05f;
-                Player.GetArmorPenetration(DamageClass.Generic) -= 0.03f;
-                Player.GetCritChance(DamageClass.Generic) -= 0.05f;
-                Player.lifeRegen -= 5;
-                Player.manaRegen -= 7;
-                Player.moveSpeed /= 1.05f;
-                Player.maxRunSpeed /= 1.05f;
-                _wereBuffsApplied = false;
-            }
-            
+  
         }
+
+        private void ApplySunglassesBuffs()
+        {
+            Player.GetAttackSpeed(DamageClass.Generic) += 0.05f;
+            Player.GetDamage(DamageClass.Generic) += 0.05f;
+            Player.GetArmorPenetration(DamageClass.Generic) += 3; // 3 единицы, а не процент!
+            Player.GetCritChance(DamageClass.Generic) += 5; // 5%, а не 0.05f
+            Player.lifeRegen += 5;
+            Player.manaRegen += 7;
+            Player.moveSpeed += 0.05f;
+            Player.maxRunSpeed += 0.05f;
+        }
+
+        private void RemoveSunglassesBuffs()
+        {
+            Player.GetAttackSpeed(DamageClass.Generic) -= 0.05f;
+            Player.GetDamage(DamageClass.Generic) -= 0.05f;
+            Player.GetArmorPenetration(DamageClass.Generic) -= 3;
+            Player.GetCritChance(DamageClass.Generic) -= 5;
+            Player.lifeRegen -= 5;
+            Player.manaRegen -= 7;
+            Player.moveSpeed -= 0.05f;
+            Player.maxRunSpeed -= 0.05f;
+        }
+
 
     }
 }

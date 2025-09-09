@@ -1,17 +1,20 @@
-﻿using Terraria.ModLoader;
-using Terraria;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using Terraria.ID;
-using Microsoft.Xna.Framework;
-using Terraria.DataStructures;
-using Terraria.ObjectData;
-using Terraria.Enums;
 using Terraria.Localization;
-
+using Terraria;
+using Terraria.ModLoader;
+using Terraria.ObjectData;
+using Microsoft.Xna.Framework;
 
 namespace HololiveMod.Tiles.Trophies
 {
-    public class MoriTrophyTile : ModTile
+    class GuraTrophyTile : ModTile
     {
+
         public override void SetStaticDefaults()
         {
             Main.tileFrameImportant[Type] = true;
@@ -25,5 +28,6 @@ namespace HololiveMod.Tiles.Trophies
             AddMapEntry(new Color(120, 85, 60), Language.GetText("MapObject.Trophy"));
             DustType = 7;
         }
+
     }
 }

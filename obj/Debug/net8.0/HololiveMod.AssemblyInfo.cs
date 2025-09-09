@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HololiveMod")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18aa54933d888c6bc0451de74d4728d483553206")]
 [assembly: System.Reflection.AssemblyProductAttribute("HololiveMod")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HololiveMod")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

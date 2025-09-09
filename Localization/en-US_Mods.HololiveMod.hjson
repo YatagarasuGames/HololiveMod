@@ -107,6 +107,41 @@ Items: {
 		DisplayName: Ying Yang Sphere
 		Tooltip: ""
 	}
+
+	MathBook: {
+		DisplayName: Math Book
+		Tooltip: ""
+	}
+
+	PureHateBar: {
+		DisplayName: Pure Hate Bar
+		Tooltip: ""
+	}
+
+	PureHateOre: {
+		DisplayName: Pure Hate Ore
+		Tooltip: ""
+	}
+
+	GuraTrophyItem: {
+		DisplayName: Gura Trophy Item
+		Tooltip: ""
+	}
+
+	GiantFin: {
+		DisplayName: Giant Fin
+		Tooltip: ""
+	}
+
+	MagnifyingGlass: {
+		DisplayName: Magnifying Glass
+		Tooltip: ""
+	}
+
+	Whirlpool: {
+		DisplayName: Whirlpool
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
@@ -127,6 +162,8 @@ Tiles: {
 	HoloOreTile.MapEntry: Holo Ore Tile
 	HoloBarTile.MapEntry: Holo Bar Tile
 	MoriTrophyTile.MapEntry: Mori Trophy Tile
+	PureHateBarTile.MapEntry: Pure Hate Bar Tile
+	PureHateOreTile.MapEntry: Pure Hate Ore Tile
 }
 
 NPCs: {

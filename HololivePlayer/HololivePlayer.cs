@@ -24,17 +24,23 @@ namespace HololiveMod.HololivePlayer
 
         public bool YingYangSphere = false;
         public bool sunglasses = false;
+        public bool mathBook = false;
+        public bool whirlpool = false;
+        public bool giantFin = false;
+        public bool magnifyingGlass = false;
 
-        public override void Initialize()
-        {
-            //rapperMicrophone = false;
-        }
+        public bool wasWhirlpoolBuffApplied = false;
+
 
         public override void ResetEffects()
         {
             rapperMicrophone = false;
             YingYangSphere = false;
             sunglasses = false;
+            mathBook = false;
+            whirlpool = false;
+            giantFin = false;
+            magnifyingGlass = false;
         }
 
         public override void ProcessTriggers(TriggersSet triggersSet)

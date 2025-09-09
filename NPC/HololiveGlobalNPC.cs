@@ -19,6 +19,7 @@ namespace HololiveMod.NPC
                 if (player.Hololive().YingYangSphere)
                 {
                     npc.SimpleStrikeNPC(100, 0);
+                    npc.SimpleStrikeNPC(10, 0);
 
                 }
             }
