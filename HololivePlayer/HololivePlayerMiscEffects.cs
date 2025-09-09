@@ -22,7 +22,7 @@ namespace HololiveMod.HololivePlayer
 
         private void MiscEffects()
         {
-            Main.NewText(Player.moveSpeed);
+            Main.NewText($"MoveSpeed before function { Player.moveSpeed}");
             if (rapperMicrophoneCooldown > 0 && rapperMicrophoneBuffTime <= 0)
             {
                 rapperMicrophoneCooldown--;
@@ -41,33 +41,16 @@ namespace HololiveMod.HololivePlayer
 
             if (sunglasses && Main.dayTime)
             {
-                ApplySunglassesBuffs();
+                Player.GetAttackSpeed(DamageClass.Generic) += 0.05f;
+                Player.GetDamage(DamageClass.Generic) += 0.05f;
+                Player.GetArmorPenetration(DamageClass.Generic) += 3; // 3 единицы, а не процент!
+                Player.GetCritChance(DamageClass.Generic) += 5; // 5%, а не 0.05f
+                Player.lifeRegen += 5;
+                Player.manaRegen += 7;
+                Player.moveSpeed += 0.05f;
+                Main.NewText($"Move speed in function {Player.moveSpeed}");
             }
   
-        }
-
-        private void ApplySunglassesBuffs()
-        {
-            Player.GetAttackSpeed(DamageClass.Generic) += 0.05f;
-            Player.GetDamage(DamageClass.Generic) += 0.05f;
-            Player.GetArmorPenetration(DamageClass.Generic) += 3; // 3 единицы, а не процент!
-            Player.GetCritChance(DamageClass.Generic) += 5; // 5%, а не 0.05f
-            Player.lifeRegen += 5;
-            Player.manaRegen += 7;
-            Player.moveSpeed += 0.05f;
-            Player.maxRunSpeed += 0.05f;
-        }
-
-        private void RemoveSunglassesBuffs()
-        {
-            Player.GetAttackSpeed(DamageClass.Generic) -= 0.05f;
-            Player.GetDamage(DamageClass.Generic) -= 0.05f;
-            Player.GetArmorPenetration(DamageClass.Generic) -= 3;
-            Player.GetCritChance(DamageClass.Generic) -= 5;
-            Player.lifeRegen -= 5;
-            Player.manaRegen -= 7;
-            Player.moveSpeed -= 0.05f;
-            Player.maxRunSpeed -= 0.05f;
         }
 
 

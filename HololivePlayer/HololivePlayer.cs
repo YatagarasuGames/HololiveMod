@@ -74,5 +74,11 @@ namespace HololiveMod.HololivePlayer
         {
             if (YingYangSphere) modifiers.FinalDamage *= 1.5f;
         }
+
+        public override void ModifyHitNPC(Terraria.NPC target, ref Terraria.NPC.HitModifiers modifiers)
+        {
+            base.ModifyHitNPC(target, ref modifiers);
+        }
+
     }
 }

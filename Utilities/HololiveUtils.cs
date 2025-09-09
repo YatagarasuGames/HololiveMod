@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HololiveMod.NPC;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,5 +11,6 @@ namespace HololiveMod.Utilities
     public static partial class HololiveUtils
     {
         public static HololivePlayer.HololivePlayer Hololive(this Player player) => player.GetModPlayer<HololivePlayer.HololivePlayer>();
+        public static HololiveGlobalNPC Hololive(this Terraria.NPC NPC) => NPC.GetGlobalNPC<HololiveGlobalNPC>();
     }
 }
