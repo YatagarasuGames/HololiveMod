@@ -142,6 +142,16 @@ Items: {
 		DisplayName: Whirlpool
 		Tooltip: ""
 	}
+
+	HololiveGun: {
+		DisplayName: Hololive Gun
+		Tooltip: ""
+	}
+
+	PureHateBow: {
+		DisplayName: Pure Hate Bow
+		Tooltip: ""
+	}
 }
 
 Projectiles: {
